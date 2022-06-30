@@ -102,9 +102,11 @@ address {
     margin-left: 95px;
       
 }
+.site-nav.icon{
+    display: flex;
+}
+.site-nav .item:{
 
-.site-nav .item {
-    
 }
 
 .site-nav .item:not(:last-child){
@@ -162,8 +164,17 @@ address {
 
 /* Стили для хиро */
 .hero {
+    width: 1600px;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
     background-color: #2F303A;
+    background-size: contain;
+    background-position: center;
     align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .hero-title  {
     display: block;
