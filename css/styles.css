@@ -2,12 +2,13 @@
     --main-color: #212121;
     --secondary-color: #757575;
 }
+
+/* Нормолайз */
 body {
-    : #E5E5E5;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
     
 }
-/* Нормолайз */
 h1,h2,h3,h4,h5,h6 {
     margin: 0px 0px;
 }
@@ -165,12 +166,13 @@ address {
 /* Стили для хиро */
 .hero {
     width: 1600px;
-    background-image: url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
     background-color: #2F303A;
-    background-size: contain;
     background-position: center;
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     align-items: center;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 
     margin-left: auto;
     margin-right: auto;
@@ -246,7 +248,7 @@ address {
         line-height: 1.71;    
         letter-spacing: 0.03em;
 }
-
+/* Иконки сверху */
 .benefits .item::before {
     display: block;
     content: ""; 
@@ -296,8 +298,14 @@ address {
 /*  Стили Наша команда */
 
 .team {
-    background: #F5F4FA;
+    display: block;
+    width: 1600px;
+    background-color: #F5F4FA;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    
 }
 
 .team-persons{
@@ -350,11 +358,50 @@ address {
 }
 
 .team-description {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     padding-top: 30px;
 
 
 }
+
+.team-socials {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px auto 30px auto;
+}
+
+.team-link {
+    display: block;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50%;
+}
+
+.team-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    
+}
+
+.team-socials .item{
+    border-radius: 50%;
+    /* background-color: blue; */
+}
+.team-socials .item:hover {
+    background-color: #2196F3;
+}
+.team-socials .item:hover .team-icon {
+    fill: #ffffff;
+}
+
+
 
 /* Стили для футера */
 
