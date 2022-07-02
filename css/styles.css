@@ -247,6 +247,34 @@ address {
         letter-spacing: 0.03em;
 }
 
+.benefits .item::before {
+    display: block;
+    content: ""; 
+    height: 120px;
+    background-color: #F5F4FA;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url('../images/icon/antenna.png');
+}
+
+.icon-clock::before {
+    background-image: url('../images/icon/clock.png');
+}
+
+.icon-diagram::before {
+    background-image: url('../images/icon/diagram.png');
+}
+
+.icon-astrounaut::before {
+    background-image: url('../images/icon/astronaut.png');
+}
+
+
 /* Стили "Чем занимаемся" */
 .work {
     display: flex;
