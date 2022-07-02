@@ -400,8 +400,44 @@ address {
 .team-socials .item:hover .team-icon {
     fill: #ffffff;
 }
+/* Постоянные клиенты секция */
+ 
+.client-title {
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em; 
+}
 
+.client-list {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px auto 30px auto;
 
+}
+
+.client-link {
+    display: block;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.client-link:hover {
+    border: 1px solid rgba(33, 150, 243, 1)
+    ;
+}
+.client-icon {
+    
+}
 
 /* Стили для футера */
 
