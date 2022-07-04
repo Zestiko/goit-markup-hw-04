@@ -103,8 +103,10 @@ address {
     margin-left: 95px;
       
 }
-.site-nav.icon{
+.contact-link{
     display: flex;
+    align-items: center;
+    width: 16px;
 }
 .site-nav .item:{
 
@@ -479,6 +481,68 @@ address {
     color: rgba(255, 255, 255, 0.6);
     
 }
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-social-title {
+
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer-social-list {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    /* margin: 16px auto 30px auto; */
+    
+}
+
+
+.footer-social-link {
+    display: block;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    
+    
+}
+
+.footer-social-list .footer-social-item{
+    border-radius: 50%;
+    /* background-color: blue; */
+}
+.footer-social-list .footer-social-item:hover {
+    background-color: #2196F3;
+}
+
 
 /* Портфолио */
 /* Кнопки портфолио */
