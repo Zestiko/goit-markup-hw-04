@@ -411,10 +411,10 @@ address {
     /* background-color: blue; */
 }
 .team-socials .team-socials-item:hover,
-.team-socials .team-socials-item:focus{
+.team-socials-item .team-link:focus{
     background-color: #2196F3;
 }
-.team-socials .team-socials-item:focus .team-icon,
+.team-socials-item .team-link:focus .team-icon,
 .team-socials .team-socials-item:hover .team-icon {
     fill: #ffffff;
 }
@@ -565,7 +565,7 @@ address {
     /* background-color: blue; */
 }
 .footer-social-list .footer-social-item:hover,
-.footer-social-list .footer-social-item:focus {
+.footer-social-list .footer-social-link:focus {
     background-color: #2196F3;
 }
 
