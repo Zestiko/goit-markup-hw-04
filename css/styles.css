@@ -107,7 +107,10 @@ address {
     display: flex;
     align-items: center;
     width: 16px;
+    fill: var(--secondary-color);
+    margin-right: 10px;
 }
+
 .site-nav .item:{
 
 }
@@ -137,6 +140,12 @@ address {
 .site-nav .link:focus {
     color: #2196F3;
 }
+
+/* .site-nav .link:hover .contact-link,
+.site-nav .link:focus .contact-link {
+    fill: #2196F3;
+} */
+
 .auth-nav {
     display: flex;  
     margin-left: auto;
@@ -148,7 +157,7 @@ address {
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -164,10 +173,14 @@ address {
 .auth-nav .link:focus {
     color: #2196F3;
 }
+.auth-nav .link:hover .contact-link,
+.auth-nav .link:focus .contact-link{
+    fill: #2196F3;
+}
 
 /* Стили для хиро */
 .hero {
-    width: 1600px;
+    max-width: 1600px;
     background-color: #2F303A;
     background-position: center;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -258,6 +271,7 @@ address {
     background-color: #F5F4FA;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 4px;
 
     margin-bottom: 30px;
 }
@@ -301,7 +315,6 @@ address {
 
 .team {
     display: block;
-    width: 1600px;
     background-color: #F5F4FA;
     background-position: center;
     margin-left: auto;
@@ -330,7 +343,7 @@ address {
 
 .team-persons .item  {
 
-
+    background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -397,12 +410,17 @@ address {
     border-radius: 50%;
     /* background-color: blue; */
 }
-.team-socials .team-socials-item:hover {
+.team-socials .team-socials-item:hover,
+.team-socials .team-socials-item:focus{
     background-color: #2196F3;
 }
+.team-socials .team-socials-item:focus .team-icon,
 .team-socials .team-socials-item:hover .team-icon {
     fill: #ffffff;
 }
+
+
+
 /* Постоянные клиенты секция */
  
 .client-title {
@@ -438,12 +456,14 @@ address {
     
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid rgba(33, 150, 243, 1);
     
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{
     fill: #2196F3;
 }
 
@@ -460,6 +480,10 @@ address {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+}
+
+.footer-contarner{
+    display: flex;
 }
 .footer-adress {
     display: flex;
@@ -485,6 +509,8 @@ address {
 .footer-social {
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
+    margin-top: 12px;
     
 }
 
@@ -516,13 +542,12 @@ address {
 
 
 .footer-social-link {
-    display: block;
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    
+        
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
@@ -539,7 +564,8 @@ address {
     border-radius: 50%;
     /* background-color: blue; */
 }
-.footer-social-list .footer-social-item:hover {
+.footer-social-list .footer-social-item:hover,
+.footer-social-list .footer-social-item:focus {
     background-color: #2196F3;
 }
 
@@ -561,13 +587,15 @@ address {
     padding: 6px 22px;
     /* margin-top: 100px; */
     
-    background-color: #fff;
+    background: #F5F4FA;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        border: none;
+        border-radius: 4px;
     
 }
 
@@ -596,6 +624,9 @@ address {
 
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n) {
