@@ -445,13 +445,14 @@ address {
 }
 
 .client-link {
-    display: block;
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
 }
 .client-icon {
     fill: #afb1b8;
